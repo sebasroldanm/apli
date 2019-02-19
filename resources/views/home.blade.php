@@ -12,6 +12,21 @@
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
+
+                        <div class="card">
+                            @role('admin')
+                            Bienvenido Administrador
+                            @endrole
+
+                            @permission('search')
+
+                            @endpermission
+
+                            @ability('admin,owner', 'search,read')
+
+                            @endability
+                        </div>
+
                     @endif
 
                     You are logged in!
