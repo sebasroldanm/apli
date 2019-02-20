@@ -23,7 +23,7 @@ class AdminSeeder extends Seeder
 		$owner->description = 'User is allowed to manage everything resources'; // optional
 		$owner->save();
 
-		//AQUI SE DECLARA E RESTO
+		//AQUI SE DECLARA EL RESTO
 
 
 		$adminUser = \App\User::create([
